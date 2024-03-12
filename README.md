@@ -1,11 +1,26 @@
 # braindead vmamba training
 
 ## setup
+bring your data
 ```
-# if uncertain about your dataset format, check our dummy `generate_classification_data.py`
+train/dog/xxx.png
+train/cat/xxy.png
+train/fish/[...]/xxz.png
+
+val/dog/123.png
+val/cat/nsdf3.png
+val/fish/[...]/asd932_.png
+
+test/dog/123.png
+test/cat/nsdf3.png
+test/fish/[...]/asd932_.png
+```
+
+get the code
+```
 git clone https://github.com/gabrieldernbach/VMamba
-mv image_folder_dataset ./VMamba/dataset && cd VMamba 
-docker build . -t mamba
+mv my_dataset ./VMamba/dataset
+cd VMamba && docker build . -t mamba
 ```
 ## train
 ```
