@@ -6,4 +6,4 @@ python -m torch.distributed.launch \
         classification/main.py --cfg classification/configs/vssm1/vssm_tiny_224_0229.yaml \
                 --batch-size 128 \
                 --data-path dataset \
-                --output /tmp
+                --output result
